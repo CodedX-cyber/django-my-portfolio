@@ -16,7 +16,7 @@ Including another URLconf
 from django.urls import path, include
 from django.contrib import admin
 from django.conf.urls.static import static
-import settings
+from django.conf import settings
 
 urlpatterns = [
     path('', include('core.urls')), # include our custom app urls here
